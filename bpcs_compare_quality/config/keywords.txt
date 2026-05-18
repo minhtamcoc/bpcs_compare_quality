@@ -1,0 +1,6 @@
+BPCS
+Adaptive BPCS
+video steganography
+bit plane
+PSNR
+MSE

@@ -1,0 +1,8 @@
+frames/
+basic_frames/
+adaptive_frames/
+basic_extract_frames/
+adaptive_extract_frames/
+audio.mp3
+basic_output.avi
+adaptive_output.avi

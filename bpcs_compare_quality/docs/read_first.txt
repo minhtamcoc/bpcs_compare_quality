@@ -1,0 +1,19 @@
+Open the lab guide:
+
+    less bpcs_compare_quality.md
+
+Short command sequence:
+
+    ffmpeg -hide_banner -i video.mp4 2> video_info.txt
+    mkdir frames
+    ffmpeg -i video.mp4 frames/frame_%04d.png
+    ffmpeg -hide_banner -i video.mp4 -q:a 0 -map a audio.mp3
+    python3 bpcs_basic_embed.py
+    python3 bpcs_adaptive_embed.py
+    mkdir basic_extract_frames
+    ffmpeg -hide_banner -i basic_output.avi basic_extract_frames/frame_%04d.png
+    python3 bpcs_basic_extract.py
+    mkdir adaptive_extract_frames
+    ffmpeg -hide_banner -i adaptive_output.avi adaptive_extract_frames/frame_%04d.png
+    python3 bpcs_adaptive_extract.py
+    python3 compare_metrics.py

@@ -1,0 +1,5 @@
+bpcs_compare_quality
+
+This lab compares normal BPCS and Adaptive BPCS for video steganography.
+Students run both methods, extract both hidden messages, and compare video
+quality with MSE, PSNR, and changed-pixel counts.
